@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS FILE LINKING -->
+    <link rel="stylesheet" href="./login.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+
+  <body>
+
+    <div id="main">
+      <h1>Login</h1>
+
+      <form id="login-Form">
+        <div id="final-message"></div>
+        <div class="credential-container">
+          <input
+            type="email"
+            id="email-Inp"
+            placeholder="Email Address*"
+            autofocus
+            autocomplete="off"
+          />
+          <small class="email-error"></small>
+          <input
+            type="password"
+            id="password-Inp"
+            placeholder="Password*"
+            autocomplete="off"
+          />
+          <small class="password-error"></small>
+        </div>
+
+        <div id="loginInp-container">
+          <input type="submit" value="Login" id="login-Inp" />
+        </div>
+
+        <p>Don't have an account? <a href="./index.html">SignUp</a></p>
+      </form>
+    </div>
+
+    <!-- JS FILE LINKING -->
+    <script defer type="module" src="./login.js"></script>
+  </body>
+</html>
